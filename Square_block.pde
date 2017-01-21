@@ -1,5 +1,5 @@
 //blue
-class Square_block extends Blocks
+class Square_block extends Blocks implements Blocks_int
 {
  public Square_block()
   {

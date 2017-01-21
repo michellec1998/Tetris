@@ -1,6 +1,6 @@
 //yellow
 //backwards -- will fix
-class L_block extends Blocks
+class L_block extends Blocks implements Blocks_int
 {
  public L_block()
   {

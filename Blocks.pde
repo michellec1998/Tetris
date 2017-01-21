@@ -1,10 +1,3 @@
-//Block superclass
-//each block has 4 tiles and 40x40 pix/ sqr
-//each block class will have it's own show function
-//acceleration will happen on its own with keypressed function b/c only the y is going into negative
-//the myCenterY is always decreasing
-//when moving side to side, x increases or decrease, left - decrease, right - increase
-
 abstract class Blocks
 {
   protected int corners;
@@ -26,21 +19,13 @@ abstract class Blocks
   abstract public void setPointDirection(int degrees);   
   abstract public double getPointDirection(); 
 
-  
-
-//when you press the down arrow, the blocks will fall faster
-//when you press down, y decreases
-public void accelerate()
-{
-}
-
 //when you press right arrow, rotates clockwise 180, when left, rotates counterclockwise 180
 public void rotate(int nDegreesOfRotation)
 {
   myPointDirection += nDegreesOfRotation;
 }
 
-//move when it comes onto the screen
+//move when it comes onto the screen it automatically falls down
 public void move()
 {
   myCenterY ++;
@@ -67,6 +52,16 @@ public void show()
       vertex(xRotatedTranslated,yRotatedTranslated);    
     }   
     endShape(CLOSE);
+}
+
+//when you press down, they fall faster
+//when you press up, they go back to orig speed
+public void keyPressed()
+{
+  if (keyCode == 40) 
+  {
+    myCenterY = myCenterY + 1.5;
+  }
 }
 
 //the end of the abstract class

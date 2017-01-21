@@ -1,9 +1,3 @@
-//there needs to be a "floor", when the blocks make it to the bottom, they stop
-//or when they touch another block, they stop
-I_block eye = new I_block();
-L_block ell = new L_block();
-Square_block squee = new Square_block();
-T_block tee = new T_block();
 Blocks_int[] blocks;
 
 public void settings()
@@ -20,12 +14,6 @@ public void settings()
     blocks[3] = new T_block();
   }
 }
-interface Blocks_int
-{
-  public void move();
-  public void show();
-}
-
 public void draw()
 {
   background(0);
@@ -34,53 +22,23 @@ public void draw()
   {
     blocks[b].move();
     blocks[b].show();
+    blocks[b].keyPressed();
   }
-  /*tee.show();
-  tee.move();
-  
-  eye.move();
-  eye.show();
-  
-  ell.show();
-  ell.move();
-  
-  squee.move();
-  squee.show(); */
-
 }
-//when mousePressed, random shape comes out
-public void mousePressed()
+
+interface Blocks_int
 {
-  //noLoop();
-   /* blocks[0] = new I_block();
-    blocks[1] = new L_block();
-    blocks[2] = new Square_block();
-    blocks[3] = new T_block(); */
-    
+  public void move();
+  public void show();
+  public void keyPressed();
+}
+
+//when mousePressed, random shape comes out
+//mouse pressed is redraw them at the top
+public void mousePressed()
+{   
   for (int b = 0; b < blocks.length; b++)
   {
-    blocks[0] = new I_block();
-    blocks[1] = new L_block();
-    blocks[2] = new Square_block();
-    blocks[3] = new T_block();
+    blocks[(int)(Math.random()*5) -1] = new ;
   }
-  //redraw();
 }
-
-
-public void keyPressed()
-{
-  if (keyCode == 40)
-  {
-    /*tee.myCenterY = tee.myCenterY + 5;
-    eye.myCenterY = eye.myCenterY + 5;
-    ell.myCenterY = ell.myCenterY + 5;
-    squee.myCenterY = squee.myCenterY + 5; */
-    for (int b = 0; b < blocks.length; b++)
-  {
-    blocks[b].getY() = blocks[b].getY() + 5;
-  }
-    
-    //blocks.getY = blocks.getY +5;
-  }
-} 

@@ -25,8 +25,6 @@ class Square_block extends Blocks implements Blocks_int
   public void show()
   {
    fill(204, 238, 255);
-   //stroke(145, 209, 255);
-   //strokeWeight(3);
    noStroke();
    
    double dRadians = myPointDirection*(Math.PI/180);                 

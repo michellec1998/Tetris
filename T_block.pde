@@ -40,8 +40,6 @@ class T_block extends Blocks implements Blocks_int
   public void show()
   {
    fill(192, 249, 187);
-   //stroke(175, 242, 169);
-   //strokeWeight(3);
    noStroke();
    
    double dRadians = myPointDirection*(Math.PI/180);                 

@@ -1,5 +1,4 @@
 //yellow
-//backwards -- will fix
 class L_block extends Blocks implements Blocks_int
 {
  public L_block()
@@ -31,8 +30,6 @@ class L_block extends Blocks implements Blocks_int
   public void show()
   {
    fill(252, 255, 181);
-   //stroke(236, 239, 155);
-   //strokeWeight(3);
    noStroke();
    
    double dRadians = myPointDirection*(Math.PI/180);                 

@@ -1,7 +1,6 @@
 //pink
 class I_block extends Blocks implements Blocks_int
 {
-  //private int myX, myY;
   public I_block()
   {
     myCenterX = 100;
@@ -21,15 +20,11 @@ class I_block extends Blocks implements Blocks_int
     yCorners[2] = -80;
     xCorners[3] = -20;
     yCorners[3] = -80;
-    //from corner 1 to corner 2 
   }
   
   public void show()
   {
    fill(255, 183, 203);
-   //stroke((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
-   //stroke(255, 165, 191);
-   //strokeWeight(3);
    noStroke();
    
     double dRadians = myPointDirection*(Math.PI/180);                 

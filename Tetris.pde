@@ -4,19 +4,16 @@ int block_num = (int)(Math.random()*5) -1;
 
 public void settings()
 {
-  size(450,700);
+  size(500,700);
   
   blocks = new Blocks_int[4];
 
   //this could be the problem
-  for (int b = 0; b < blocks.length; b++)
-  {
   blocks[0] = new I_block();
   blocks[1] = new L_block();
   blocks[2] = new Square_block();
   blocks[3] = new T_block();
-  }
-    
+  
 }
 public void draw()
 {

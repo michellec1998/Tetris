@@ -36,3 +36,34 @@ Blocks_int tee = new T_block(); */
   
   //squee.move();
   //squee.show();
+  
+  
+  //chooses a random shape only everytime you run the program
+  //need to choose when during the same game
+ 
+ 
+ //make an array for each block class 
+ //choose one from an array?
+ 
+ /* if (block_num == 0)
+ {
+    I_block eye = new I_block();
+ }
+ else if (block_num == 1)
+ {
+    L_block ell = new L_block();
+ }
+ else if (block_num == 2)
+ {
+    Square_block squee = new Square_block();
+ }
+  else  if (block_num == 3)
+ {
+    T_block tee = new T_block();
+ } */
+ 
+ //if i used an array with 30 in each array
+ //then can choose from each array until there's no more
+ 
+ 
+ 

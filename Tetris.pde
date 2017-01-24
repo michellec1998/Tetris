@@ -12,11 +12,15 @@ public void settings()
   
   blocks = new Blocks_int[4];
 
-  //this could be the problem
   blocks[0] = new I_block();
   blocks[1] = new L_block();
   blocks[2] = new Square_block();
   blocks[3] = new T_block();
+  
+  eyes[0] = new I_block();
+  ells[0] = new L_block();
+  squares[0] = new Square_block();
+  tees[0] = new T_block();
   
 }
 public void draw()

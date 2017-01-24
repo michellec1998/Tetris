@@ -9,11 +9,13 @@ public void settings()
   blocks = new Blocks_int[4];
 
   //this could be the problem
- 
+  for (int b = 0; b < blocks.length; b++)
+  {
   blocks[0] = new I_block();
   blocks[1] = new L_block();
   blocks[2] = new Square_block();
   blocks[3] = new T_block();
+  }
     
 }
 public void draw()
@@ -27,12 +29,6 @@ public void draw()
     blocks[b].keyPressed();
   }
 
-  
-  blocks[0] = new I_block();
-  blocks[1] = new L_block();
-  blocks[2] = new Square_block();
-  blocks[3] = new T_block();
-  
 }
 
 interface Blocks_int
@@ -47,5 +43,8 @@ interface Blocks_int
 
 public void mousePressed()
   {
-    
+  blocks[0] = new I_block();
+  blocks[1] = new L_block();
+  blocks[2] = new Square_block();
+  blocks[3] = new T_block();
   }

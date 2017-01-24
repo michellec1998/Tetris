@@ -176,4 +176,8 @@ T_block[] tees = new T_block[5];
       squares[0].move();
     } 
  
+     blocks[0] = new I_block();
+  blocks[1] = new L_block();
+  blocks[2] = new Square_block();
+  blocks[3] = new T_block();
  */

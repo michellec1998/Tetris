@@ -3,8 +3,8 @@ class T_block extends Blocks implements Blocks_int
 {
  public T_block()
   {
-    myCenterX = 300;
-    myCenterY = 200;
+    myCenterX = 310;
+    myCenterY = -100;
     myDirectionX = 0;
     myDirectionY = 0;
     myPointDirection = 0;

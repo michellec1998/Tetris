@@ -3,8 +3,8 @@ class L_block extends Blocks implements Blocks_int
 {
  public L_block()
   {
-    myCenterX = 200;
-    myCenterY = 70;
+    myCenterX = 120;
+    myCenterY = -100;
     myDirectionX = 0;
     myDirectionY = 0;
     myPointDirection = 0;

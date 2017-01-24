@@ -3,8 +3,8 @@ class Square_block extends Blocks implements Blocks_int
 {
  public Square_block()
   {
-    myCenterX = 300;
-    myCenterY = 100;
+    myCenterX = 200;
+    myCenterY = -100;
     myDirectionX = 0;
     myDirectionY = 0;
     myPointDirection = 0;

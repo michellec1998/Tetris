@@ -1,3 +1,4 @@
+/*
 //press down to speed up
 //press up to go back to orig. speed
 //connect the pieces
@@ -60,10 +61,50 @@ Blocks_int tee = new T_block(); */
   else  if (block_num == 3)
  {
     T_block tee = new T_block();
- } */
+ } 
  
  //if i used an array with 30 in each array
  //then can choose from each array until there's no more
  
+ public void mousePressed()
+{   
+  blocks[0] = new I_block();
+  blocks[1] = new L_block();
+  blocks[2] = new Square_block();
+  blocks[3] = new T_block();
+
+  if (block_num == 0)
+ {
+    I_block eye = new I_block;
+ }
+ else if (block_num == 1)
+ {
+    L_block ell = new L_block();
+ }
+ else if (block_num == 2)
+ {
+    Square_block squee = new Square_block();
+ }
+  else  if (block_num == 3)
+ {
+    T_block tee = new T_block();
+ }
+   
+}
  
  
+if (block_num == 0)
+    {
+      return new I_block();
+    }
+    if (block_num == 1)
+    {
+    }
+    if (block_num == 2)
+    {
+    }
+    if (block_num == 3)
+    {
+    } 
+ 
+ */

@@ -3,8 +3,8 @@ class I_block extends Blocks implements Blocks_int
 {
   public I_block()
   {
-    myCenterX = 100;
-    myCenterY = 100;
+    myCenterX = 40;
+    myCenterY = -100;
     myDirectionX = 0;
     myDirectionY = 0;
     myPointDirection = 0;

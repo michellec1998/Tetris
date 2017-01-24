@@ -33,9 +33,9 @@ public void move()
   myCenterX += myDirectionX;    
   myCenterY += myDirectionY;   
   
-  if(myCenterY > height)
+  if(myCenterY - 100 > height)
   {
-    myCenterY = -50;
+    myCenterY = -10;
   }
 }
 

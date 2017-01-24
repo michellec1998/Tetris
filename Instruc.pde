@@ -113,7 +113,7 @@ if (block_num == 0)
   tees[0] = new T_block();
   
   
-  I_block[] eyes = new I_block[5];
+I_block[] eyes = new I_block[5];
 L_block[] ells = new L_block[5];
 Square_block[] squares = new Square_block[5];
 T_block[] tees = new T_block[5];
@@ -150,7 +150,7 @@ T_block[] tees = new T_block[5];
     tees[t].keyPressed();
   }
   
-    eyes[0] = new I_block();
+  eyes[0] = new I_block();
   ells[0] = new L_block();
   squares[0] = new Square_block();
   tees[0] = new T_block();

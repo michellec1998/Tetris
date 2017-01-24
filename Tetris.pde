@@ -1,6 +1,10 @@
 Blocks_int[] blocks;
 int block_num = (int)(Math.random()*5) -1;
 
+I_block[] eyes = new I_block[5];
+L_block[] ells = new L_block[5];
+Square_block[] squares = new Square_block[5];
+T_block[] tees = new T_block[5];
 
 public void settings()
 {
@@ -25,6 +29,40 @@ public void draw()
     blocks[b].show();
     blocks[b].keyPressed();
   }
+  
+  //the I block
+  for (int e = 0; e < eyes.length; e++)
+  {
+    eyes[e].move();
+    eyes[e].show();
+    eyes[e].keyPressed();
+  }
+  
+  //the L block
+  for (int l = 0; l < ells.length; l++)
+  {
+    ells[l].move();
+    ells[l].show();
+    ells[l].keyPressed();
+  }
+  
+  //the square block
+  for (int s = 0; s < squares.length; s++)
+  {
+    squares[s].move();
+    squares[s].show();
+    squares[s].keyPressed(); 
+  }
+  
+  //the T block
+  for (int t = 0; t < tees.length; t++)
+  {
+    tees[t].move();
+    tees[t].show();
+    tees[t].keyPressed();
+  }
+  
+  
 
 }
 

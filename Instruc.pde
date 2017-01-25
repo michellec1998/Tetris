@@ -175,6 +175,11 @@ T_block[] tees = new T_block[5];
       squares[0].show();
       squares[0].move();
     } 
+    
+    I_block[] eyes = new I_block[5];
+L_block[] ells = new L_block[5];
+Square_block[] squares = new Square_block[5];
+T_block[] tees = new T_block[5];
  
      blocks[0] = new I_block();
   blocks[1] = new L_block();

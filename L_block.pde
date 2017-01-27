@@ -1,5 +1,5 @@
 //yellow
-class L_block extends Blocks implements Blocks_int
+class L_block extends Blocks
 {
  public L_block()
   {

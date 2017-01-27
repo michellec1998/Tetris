@@ -1,5 +1,5 @@
 //green
-class T_block extends Blocks implements Blocks_int
+class T_block extends Blocks
 {
  public T_block()
   {

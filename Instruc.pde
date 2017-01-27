@@ -185,4 +185,73 @@ T_block[] tees = new T_block[5];
   blocks[1] = new L_block();
   blocks[2] = new Square_block();
   blocks[3] = new T_block();
+  
+  
+  
+    blocks = new Blocks_int[4];
+  
+  blocks[0] = new I_block();
+  blocks[1] = new L_block();
+  blocks[2] = new Square_block();
+  blocks[3] = new T_block();
+  
+    for (int b = 0; b < blocks.length; b++)
+  {
+    blocks[b].move();
+    blocks[b].show();
+    blocks[b].keyPressed();
+  }
+  
+  Blocks_int[] blocks;
+  
+    blocks[0] = new I_block();
+  blocks[1] = new L_block();
+  blocks[2] = new Square_block();
+  blocks[3] = new T_block();
+  
+  interface Blocks_int
+{
+  public void move();
+  public void show();
+  public void keyPressed();
+ 
+}
+
+
+ tee.move();
+  tee.keyPressed();
+  
+  eye.move();
+  eye.keyPressed();
+  
+  ell.move();
+  ell.keyPressed();
+  
+  squee.move();
+  squee.keyPressed();
+  
+  
+  if (mousePressed)
+  {
+    if (bum == 0)
+    {
+      eye = new I_block();
+      eye.show();
+    }
+    if (bum == 1)
+    {
+      ell = new L_block();
+      ell.show();
+    }
+    if (bum == 2)
+    {
+      squee = new Square_block();
+      squee.show();
+    }
+    if (bum == 3)
+    {
+      tee = new T_block();
+      tee.show();
+    }
+  } 
  */

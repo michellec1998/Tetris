@@ -118,6 +118,19 @@ L_block[] ells = new L_block[5];
 Square_block[] squares = new Square_block[5];
 T_block[] tees = new T_block[5];
 
+  for (int i = 0; i < eyes.length; i ++)
+  {
+  }
+  for (int l = 0; l < ells.length; l ++)
+  {
+  }
+  for (int s = 0; s < squares.length; s++)
+  {
+  }
+  for (int t = 0; t < tees.length; t++)
+  {
+  }
+
 //the I block
   for (int e = 0; e < eyes.length; e++)
   {

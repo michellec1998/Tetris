@@ -5,17 +5,12 @@ abstract class Blocks
   protected int[] yCorners;
   //THE CENTER OF A RECT IS AT THE TOP LEFT CORNER
   protected double myCenterX, myCenterY;
-  protected double myDirectionX, myDirectionY;
   protected double myPointDirection;
   
   abstract public void setX(int x);  
   abstract public int getX();   
   abstract public void setY(int y);   
   abstract public int getY();   
-  abstract public void setDirectionX(double x);   
-  abstract public double getDirectionX();   
-  abstract public void setDirectionY(double y);   
-  abstract public double getDirectionY();   
   abstract public void setPointDirection(int degrees);   
   abstract public double getPointDirection(); 
 
@@ -28,10 +23,7 @@ public void rotate(int nDegreesOfRotation)
 //move when it comes onto the screen it automatically falls down
 public void move()
 {
-  myCenterY ++;
-  
-  myCenterX += myDirectionX;    
-  myCenterY += myDirectionY;   
+  myCenterY ++;  
   
   if(myCenterY - 100 > height - 280)
   {
@@ -41,7 +33,7 @@ public void move()
 
 public void show()
 {
-  double dRadians = myPointDirection*(Math.PI/180);                 
+  double dRadians = myPointDirection*(Math.PI/90);                 
     int xRotatedTranslated, yRotatedTranslated;    
     beginShape();         
     for(int nI = 0; nI < corners; nI++)    
@@ -61,23 +53,23 @@ public void keyPressed()
   //left to go left
   if (keyCode == 37)
   {
-    myCenterX = myCenterX -1;
+    myCenterX = myCenterX -0.5;
   }
   //right to go right
   if (keyCode == 39)
   {
-    myCenterX = myCenterX +1;
+    myCenterX = myCenterX +0.5;
   }
   //up to rotateclockwise
   if (keyCode == 38)
   { 
-   // myDirectionX = myDirectionX + 90;
+    myPointDirection = myPointDirection - 1;
   }
   
   //down to rotate counter clockwise
     if (keyCode == 40) 
   {
-    myPointDirection = myPointDirection - 1;
+    myCenterY = myCenterY + 0.5;
   } 
   
 }

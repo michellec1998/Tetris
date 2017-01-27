@@ -5,8 +5,6 @@ class I_block extends Blocks
   {
     myCenterX = 40;
     myCenterY = -100;
-    myDirectionX = 0;
-    myDirectionY = 0;
     myPointDirection = 0;
     
     corners = 4;
@@ -27,7 +25,7 @@ class I_block extends Blocks
    fill(255, 183, 203);
    noStroke();
    
-    double dRadians = myPointDirection*(Math.PI/180);                 
+    double dRadians = myPointDirection*(Math.PI/90);                 
     int xRotatedTranslated, yRotatedTranslated;    
     beginShape();         
     for(int nI = 0; nI < corners; nI++)    
@@ -56,22 +54,6 @@ class I_block extends Blocks
    public int getY()
    {
      return (int)myCenterY;
-   }
-   public void setDirectionX(double x)
-   {
-     myDirectionX = x;
-   }
-   public double getDirectionX()  
-   {
-     return (double)myDirectionX;
-   }
-   public void setDirectionY(double y)
-   {
-     myDirectionY = y;
-   }
-   public double getDirectionY()
-   {
-    return (double)myDirectionY;
    }
     public void setPointDirection(int degrees)
    {

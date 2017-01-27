@@ -185,4 +185,35 @@ T_block[] tees = new T_block[5];
   blocks[1] = new L_block();
   blocks[2] = new Square_block();
   blocks[3] = new T_block();
+  
+  Blocks_int[] blocks;
+  
+  blocks = new Blocks_int[4];
+  
+  blocks[0] = new I_block();
+  blocks[1] = new L_block();
+  blocks[2] = new Square_block();
+  blocks[3] = new T_block();
+  
+  for (int b = 0; b < blocks.length; b++)
+  {
+    blocks[b].move();
+    blocks[b].show();
+    blocks[b].keyPressed();
+  }
+  
+  interface Blocks_int
+{
+  public void move();
+  public void show();
+  public void keyPressed();
+}
+
+public void mousePressed()
+  {
+  blocks[0] = new I_block();
+  blocks[1] = new L_block();
+  blocks[2] = new Square_block();
+  blocks[3] = new T_block();
+  }
  */

@@ -1,5 +1,5 @@
 //pink
-class I_block extends Blocks implements Blocks_int
+class I_block extends Blocks
 {
   public I_block()
   {

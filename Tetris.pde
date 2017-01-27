@@ -37,7 +37,7 @@ public void draw()
   background(0);
   ugly.show();
   
-  for (int i = 0; i < eyes.length; i ++)
+  /*for (int i = 0; i < eyes.length; i ++)
   {
     eyes[i].show();
     eyes[i].move();
@@ -54,7 +54,7 @@ public void draw()
     squares[s].show();
     squares[s].move();
     squares[s].keyPressed();
-  }
+  } */
   for (int t = 0; t < tees.length; t++)
   {
     tees[t].show();
@@ -64,7 +64,7 @@ public void draw()
 
 }
 
-
-
-//when mousePressed, random shape comes out
-//mouse pressed is redraw them at the top
+public void mousePressed()
+{
+  squares[1] = new Square_block();
+}

@@ -33,9 +33,9 @@ public void move()
   myCenterX += myDirectionX;    
   myCenterY += myDirectionY;   
   
-  if(myCenterY - 100 > height)
+  if(myCenterY - 100 > height - 280)
   {
-    myCenterY = -10;
+    noLoop();
   }
 }
 
@@ -58,10 +58,28 @@ public void show()
 //when you press up, they go back to orig speed
 public void keyPressed()
 {
-  if (keyCode == 40) 
+  //left to go left
+  if (keyCode == 37)
   {
-    myCenterY = myCenterY + 1.5;
+    myCenterX = myCenterX -1;
   }
+  //right to go right
+  if (keyCode == 39)
+  {
+    myCenterX = myCenterX +1;
+  }
+  //up to rotateclockwise
+  if (keyCode == 38)
+  { 
+   // myDirectionX = myDirectionX + 90;
+  }
+  
+  //down to rotate counter clockwise
+    if (keyCode == 40) 
+  {
+    myPointDirection = myPointDirection - 1;
+  } 
+  
 }
 
 //the end of the abstract class
